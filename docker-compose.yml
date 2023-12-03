@@ -4,10 +4,10 @@ services:
   db:
     image: mariadb:latest
     environment:
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-kelompok07}
+      - MYSQL_USER=${MYSQL_USER:-om_admin}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-2332456}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-openmeetings}
     volumes:
       - squash-tm-db:/var/lib/mysql/data
   main:
