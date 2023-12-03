@@ -18,5 +18,8 @@ services:
       - 8888:8888
     environment:
       - OM_DB_HOST=db
+      - OM_DB_USER=kelompok07
+      - OM_DB_PASSWORD=Lkk*0691013
+
 volumes:
   squash-tm-db:
