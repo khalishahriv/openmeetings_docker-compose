@@ -11,7 +11,7 @@ services:
     volumes:
       - squash-tm-db:/var/lib/mysql/data
   main:
-    image: apache/openmeetings:${OM_TAG}
+    image: apache/openmeetings:${OM_TAG:-5.0.0-M3.1}
     restart: always
     ports:
       - 5443:5443
